@@ -1,65 +1,66 @@
-# 🎓 Student Records Management System
+# Student Records Management System (SQL Server Project)
 
-This project is a SQL Server-based *Student Records Management System* designed to handle student information, course enrollments, departmental data, and student results. 
-It includes core functionalities like inserting, updating, and deleting student records, all powered by well-structured SQL tables and stored procedures.
+## 📌 Project Overview
 
----
-
-## 📁 Project Structure
-
-- Student.sql – Contains the Student table structure
-- Department.sql – Contains Department table
-- Courses.sql – Course information
-- Enrollment.sql – Links students to courses and records grades
-- Stored Procedures:
-  - AddStudent.sql
-  - EnrollStudent.sql
-  - UpdateGrade.sql
-  - GetStudentResults.sql
-  - UpdateStudentInfo.sql
-  - DeleteStudent.sql
-  - SearchStudentByName.sql
+This project is a *Student Records Management System* built using Microsoft SQL Server. 
+It includes a well-structured database that manages students, departments, courses, and their enrollments.
+The goal is to demonstrate my ability to design, populate, and interact with a relational database using SQL queries and stored procedures.
 
 ---
 
-## 🔧 Technologies Used
+## 📂 Database Structure
+
+### Tables:
+- *Students*
+- *Departments*
+- *Courses*
+- *Enrollments*
+
+Each table contains 10 rows of sample data (11 rows for Enrollments).
+
+---
+
+## ⚙ Stored Procedures Included
+
+- AddStudent – Adds a new student record  
+- EnrollStudent – Enrolls a student into a course  
+- UpdateGrade – Updates a student’s grade  
+- GetStudentResults – Retrieves academic performance  
+- UpdateStudentInfo – Updates student info  
+- DeleteStudent – Deletes a student  
+- SearchStudentByName – Searches for a student by name  
+- SearchByName – Another search variation  
+
+---
+
+## 🛠 Tools & Technologies
 
 - Microsoft SQL Server
-- SQL Management Studio
-- T-SQL (Transact-SQL)
+- SSMS (SQL Server Management Studio)
+- Windows OS (VMware)
+- GitHub for version control
+- Visual Studio Code (for file editing)
 
 ---
 
-## 🚀 Features
+## 📄 How to Run
 
-- Add and manage student records
-- Enroll students into courses
-- Update student grades
-- View results per student
-- Search students by name
-- Full CRUD operations with stored procedures
+1. Clone the repository or download the .sql files.
+2. Open SQL Server Management Studio.
+3. Execute the script files in the order:
+   - Create Tables
+   - Insert Sample Data
+   - Run Stored Procedures
 
 ---
 
-## 📌 How to Use
-
-1. Clone or download the repository
-2. Open SQL Server Management Studio
-3. Run each .sql file in order:
-   - Start with Create Tables (Student, Department, Courses, Enrollment)
-   - Insert sample values
-   - Create stored procedures
-4. Test procedures with EXEC commands like:
-   ```sql
-   EXEC AddStudent 'Grace', 'Nwakama', 'Female', '2000-01-01', 1;
-
-
-  ## 🙋 Author
+## 👩‍💻 Author
 
 *Grace Nwakama*  
-Student of Information Technology | Database Management with SQL Server  
-📍 Lekki, Lagos | ✉ Goodluckgrace08@gmail.com
+[Goodluckgrace08@gmail.com](mailto:Goodluckgrace08@gmail.com)
 
-## 📝 Note
+---
 
-> This project is part of my professional portfolio to demonstrate SQL Server proficiency and real-world database management logic.
+## ✅ Status
+
+Project Complete ✔ | Open for suggestions or improvements
