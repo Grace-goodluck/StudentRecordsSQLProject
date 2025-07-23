@@ -1,66 +1,53 @@
-# Student Records Management System (SQL Server Project)
+# 🗃 Inventory Control Database Project (SQL Server)
 
-## 📌 Project Overview
+This SQL Server-based Inventory Control System is designed to help manage product data, monitor stock levels, and track inventory transactions efficiently.
 
-This project is a *Student Records Management System* built using Microsoft SQL Server. 
-It includes a well-structured database that manages students, departments, courses, and their enrollments.
-The goal is to demonstrate my ability to design, populate, and interact with a relational database using SQL queries and stored procedures.
+## 📦 Tables Included
 
----
+- *Products*
+- *Categories*
+- *Suppliers*
+- *InventoryTransactions*
 
-## 📂 Database Structure
+## 📋 Description
 
-### Tables:
-- *Students*
-- *Departments*
-- *Courses*
-- *Enrollments*
+This database project is focused on storing and managing inventory data for a retail or wholesale business. It includes the following capabilities:
 
-Each table contains 10 rows of sample data (11 rows for Enrollments).
+- Add new products with category and supplier information.
+- Track and update stock levels.
+- View inventory transactions.
+- Monitor low stock and generate summaries.
 
----
+## ⚙ Stored Procedures Implemented
 
-## ⚙ Stored Procedures Included
+- AddProduct
+- UpdateProductStock
+- DeleteProduct
+- GetAllProducts
+- GetLowStockProducts
+- RecoverInventoryTransaction
+- GetInventorySummary
 
-- AddStudent – Adds a new student record  
-- EnrollStudent – Enrolls a student into a course  
-- UpdateGrade – Updates a student’s grade  
-- GetStudentResults – Retrieves academic performance  
-- UpdateStudentInfo – Updates student info  
-- DeleteStudent – Deletes a student  
-- SearchStudentByName – Searches for a student by name  
-- SearchByName – Another search variation  
+Each stored procedure was written to handle a specific operation in the inventory management process.
 
----
+## 📌 Sample Use Cases
 
-## 🛠 Tools & Technologies
-
-- Microsoft SQL Server
-- SSMS (SQL Server Management Studio)
-- Windows OS (VMware)
-- GitHub for version control
-- Visual Studio Code (for file editing)
+Examples are included for inserting product data, updating stock levels, and retrieving inventory reports. These procedures can be run from SQL Server Management Studio (SSMS).
 
 ---
 
-## 📄 How to Run
+### ⚠ Note on Column Naming
 
-1. Clone the repository or download the .sql files.
-2. Open SQL Server Management Studio.
-3. Execute the script files in the order:
-   - Create Tables
-   - Insert Sample Data
-   - Run Stored Procedures
+> *Important:*  
+> In the Products table, the column QuantityInStock was mistakenly named as QuantityInShock. This was an unintended typo during table creation.  
+>  
+> For consistency across all related stored procedures, the same column name (QuantityInShock) was maintained to avoid errors.  
+>  
+> Kindly note that this was a spelling mistake and should ideally be QuantityInStock.
 
 ---
 
 ## 👩‍💻 Author
 
-*Grace Nwakama*  
-[Goodluckgrace08@gmail.com](mailto:Goodluckgrace08@gmail.com)
-
----
-
-## ✅ Status
-
-Project Complete ✔ | Open for suggestions or improvements
+*Grace Goodluck Nwakama*  
+Aptech Learning Center – Diploma in Information Technology (Database Management with SQL Server)
